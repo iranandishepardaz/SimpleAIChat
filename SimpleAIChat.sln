@@ -5,6 +5,13 @@ VisualStudioVersion = 17.14.37314.3 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleAIChat", "SimpleAIChat\SimpleAIChat.csproj", "{61BF8FA9-45B1-48B4-BC4A-625556EF3A55}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApcoAgentCore", "ApcoAgentCore\ApcoAgentCore.csproj", "{E0F6596B-6032-4290-A717-CACD510D71E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
+	ProjectSection(SolutionItems) = preProject
+		ReadMe.txt = ReadMe.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +22,10 @@ Global
 		{61BF8FA9-45B1-48B4-BC4A-625556EF3A55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61BF8FA9-45B1-48B4-BC4A-625556EF3A55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61BF8FA9-45B1-48B4-BC4A-625556EF3A55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0F6596B-6032-4290-A717-CACD510D71E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0F6596B-6032-4290-A717-CACD510D71E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0F6596B-6032-4290-A717-CACD510D71E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0F6596B-6032-4290-A717-CACD510D71E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
