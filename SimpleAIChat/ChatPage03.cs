@@ -9,7 +9,7 @@ namespace SimpleAIChat
     public partial class ChatPage03 : Form
     {
         private HttpClient _httpClient = new HttpClient();
-        private readonly LLMService _llmService = new LLMService();
+        private readonly LLMService00 _llmService = new LLMService00();
 
         private readonly List<ChatMessage> _chatHistory = new List<ChatMessage>();
         private List<LLM> _models = new List<LLM>();
@@ -27,7 +27,7 @@ namespace SimpleAIChat
         {
             try
             {
-                _models = _llmService.LoadModels();
+                _models = LLMService00.LoadModels();
                 _models = _models.FindAll(x => x.Enabled);
 
                 cmbModel.DataSource = _models;
@@ -782,6 +782,21 @@ namespace SimpleAIChat
         {
             public string Role { get; set; } = "";
             public string Content { get; set; } = "";
+        }
+
+        private class LLMResponse
+        {
+            public string Content { get; set; } = "";
+
+            public int PromptTokens { get; set; }
+
+            public int CompletionTokens { get; set; }
+
+            public int TotalTokens { get; set; }
+
+            public TimeSpan ResponseTime { get; set; }
+
+            public bool IsStream { get; set; }
         }
     }
 }

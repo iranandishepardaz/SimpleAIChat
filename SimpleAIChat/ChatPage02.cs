@@ -21,7 +21,6 @@ namespace SimpleAIChat
         private List<ChatMessage> _chatHistory = new List<ChatMessage>();
         private CancellationTokenSource? _cancellationTokenSource;
 
-        private LLMService _llmService = new LLMService();
         private List<LLM> _models = new List<LLM>();
         private LLM _selectedModel;
 
@@ -38,7 +37,7 @@ namespace SimpleAIChat
             // ---------------------------------------------------------
             try
             {
-                _models = _llmService.LoadModels();
+                _models = LLMService00.LoadModels(false);
 
 
                 // -----------------------------------------------------

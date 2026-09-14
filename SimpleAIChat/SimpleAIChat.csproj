@@ -1,15 +1,25 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows</TargetFramework>
-    <Nullable>enable</Nullable>
-    <UseWindowsForms>true</UseWindowsForms>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<UseWindowsForms>true</UseWindowsForms>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Company>APCO</Company>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\ApcoAgentCore\ApcoAgentCore.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\ApcoAgentCore\ApcoAgentCore.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="AgentPage00.cs">
+	    <SubType>Form</SubType>
+	  </Compile>
+	  <Compile Update="ChatPage05.cs">
+	    <SubType>Form</SubType>
+	  </Compile>
+	</ItemGroup>
 
 </Project>
